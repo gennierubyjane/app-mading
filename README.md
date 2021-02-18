@@ -4,8 +4,8 @@ Aplikasi ini dibangun untuk Tugas Akhir Pemograman Sistem Bergerak
 
 oleh:
 
-Lenggogeni (18076079)
-Yunavia Aryani (18076098)
+- Lenggogeni (18076079)
+- Yunavia Aryani (18076098)
 
 Program Studi Pendidikan Teknik Informatika dan Komputer Jurusan Teknik Elektronika Fakultas Teknik Universitas Negeri Padang
 
