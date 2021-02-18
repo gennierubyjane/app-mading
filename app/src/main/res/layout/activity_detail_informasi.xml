@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/tombolKembali"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/tombol_kembali"
+        android:clickable="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tombolKembali"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:text="{judul}"
+        android:textColor="@color/ungu"
+        android:fontFamily="@font/wavehausbook"
+        android:textFontWeight="100"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/wavehausbook"
+        android:text="{waktu}"
+        android:textColor="@color/pinkterang"
+        android:textFontWeight="100"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waktu"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/wavehausbook"
+        android:text="{detail}"
+        android:textColor="@color/ungu"
+        android:textFontWeight="100"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/detail"
+        android:scaleType="fitStart"
+        android:layout_marginRight="38dp" />
+
+    <ImageView
+        android:id="@+id/tombolHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/tombol_hapus_putih"
+        android:clickable="true" />
+
+</RelativeLayout>

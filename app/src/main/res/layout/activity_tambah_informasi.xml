@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/tombolKembali"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="53dp"
+        android:text=""
+        android:background="@drawable/tombol_kembali"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/judul"
+        android:fontFamily="@font/wavehausbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:backgroundTint="@color/ungu"
+        android:padding="20dp"
+        android:ems="10"
+        android:hint="Judul"
+        android:textColorHint="@color/ungu"
+        android:textColor="@color/ungu"
+        android:textSize="18sp"
+        android:isScrollContainer="true"
+        android:inputType="textCapSentences"
+        android:layout_below="@id/tombolKembali"
+        android:maxLength="250"/>
+
+    <EditText
+        android:id="@+id/detail"
+        android:fontFamily="@font/wavehausbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:backgroundTint="@color/ungu"
+        android:padding="20dp"
+        android:ems="10"
+        android:hint="Detail"
+        android:textColorHint="@color/ungu"
+        android:textColor="@color/ungu"
+        android:textSize="18sp"
+        android:isScrollContainer="true"
+        android:inputType="textCapSentences|textMultiLine"
+        android:layout_below="@id/judul"/>
+
+    <Button
+        android:id="@+id/bUpload"
+        android:fontFamily="@font/wavehausbook"
+        android:background="@drawable/text_input_putih"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:text="Pilih File (Max 2MB)"
+        android:textAllCaps="false"
+        android:textColor="@color/ungu"
+        android:textSize="18sp"
+        android:layout_below="@id/detail" />
+
+    <ImageView
+        android:id="@+id/previewImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/bUpload"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="38dp" />
+
+    <Button
+        android:id="@+id/tombolKirim"
+        android:fontFamily="@font/wavehausbook"
+        android:visibility="gone"
+        android:background="@drawable/tombol_pink"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:text="Kirim"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        android:layout_below="@id/previewImg" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/tombolKirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/putih"
+        android:visibility="gone"/>
+
+</RelativeLayout>

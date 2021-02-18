@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="53dp"
+        android:text="Selamat Datang"
+        android:textColor="@color/ungu"
+        android:fontFamily="@font/wavehaussuperbold"
+        android:textSize="30sp"
+        android:textFontWeight="100" />
+
+    <TextView
+        android:id="@+id/subWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="di Aplikasi Mading"
+        android:fontFamily="@font/wavehausbook"
+        android:textSize="18sp"
+        android:textColor="@color/ungu"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="10dp"
+        android:textFontWeight="100"
+        android:layout_below="@id/welcome"/>
+
+    <TextView
+        android:id="@+id/subWelcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jurusan Akuntansi FE UNP"
+        android:fontFamily="@font/wavehausbook"
+        android:textSize="18sp"
+        android:textColor="@color/ungu"
+        android:layout_marginLeft="38dp"
+        android:textFontWeight="100"
+        android:layout_below="@id/subWelcome"/>
+
+    <TextView
+        android:id="@+id/subWelcome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login untuk memulai sesi anda"
+        android:fontFamily="@font/wavehausbook"
+        android:textSize="18sp"
+        android:textColor="@color/putih"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="38dp"
+        android:textFontWeight="100"
+        android:layout_below="@id/subWelcome2"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:background="@drawable/text_input_putih"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxLength="50"
+        android:hint="Username"
+        android:fontFamily="@font/wavehausbook"
+        android:textColorHint="@color/ungu"
+        android:textColor="@color/ungu"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        android:layout_below="@id/subWelcome3"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:background="@drawable/text_input_putih"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxLength="50"
+        android:hint="Password"
+        android:textColorHint="@color/ungu"
+        android:textColor="@color/ungu"
+        android:inputType="textPassword"
+        android:fontFamily="@font/wavehausbook"
+        android:textSize="18sp"
+        android:layout_below="@id/username"/>
+
+    <Button
+        android:id="@+id/tombolLogin"
+        android:background="@drawable/tombol_pink"
+        android:fontFamily="@font/wavehausbook"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:text="login"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        android:layout_below="@id/password" />
+
+    <TextView
+        android:id="@+id/tombolDaftar"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/wavehausbook"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun? daftar disini"
+        android:textColor="@color/putih"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/tombolLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/putih"
+        android:visibility="gone"/>
+
+</RelativeLayout>

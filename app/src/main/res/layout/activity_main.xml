@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="53dp"
+        android:text="Hello,"
+        android:fontFamily="@font/wavehausbook"
+        android:textColor="@color/pinkterang"
+        android:textSize="18sp"
+        android:textFontWeight="100" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:text="{name}"
+        android:fontFamily="@font/wavehausbook"
+        android:textColor="@color/ungu"
+        android:textSize="24sp"
+        android:textFontWeight="100"
+        android:layout_below="@id/hello" />
+
+    <TextView
+        android:id="@+id/tombolLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentEnd="true"
+        android:text="Logout"
+        android:fontFamily="@font/wavehausbook"
+        android:textColor="@color/ungu"
+        android:textFontWeight="100"
+        android:textSize="18sp"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/searchPanel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/name"
+        android:background="@drawable/text_input_putih">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/cari"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="Cari"
+                android:fontFamily="@font/wavehausbook"
+                android:textColorHint="@color/pinkterang"
+                android:textColor="@color/pinkterang"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/tombolCari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/tombol_cari"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/belumAda"
+        android:visibility="invisible"
+        android:text="Tidak ada data"
+        android:textColor="@color/ungu"
+        android:textSize="18sp"
+        android:textFontWeight="100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/wavehausbook"
+        android:textAlignment="center"
+        android:layout_below="@id/searchPanel" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipedown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/searchPanel" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/informasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/tombolTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombol_tambah_pink"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

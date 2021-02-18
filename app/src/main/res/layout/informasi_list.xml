@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="1140px"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:clickable="true">
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:scaleType="centerCrop"
+            android:background="@color/pink"/>
+
+        <ImageView
+            android:id="@+id/gambarJudul"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/gambar_judul"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{informasi}"
+            android:fontFamily="@font/wavehausbook"
+            android:textColor="@color/ungu"
+            android:textSize="21sp"
+            android:layout_marginBottom="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textFontWeight="100"/>
+
+        <TextView
+            android:id="@+id/waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{waktu}"
+            android:fontFamily="@font/wavehausbook"
+            android:textColor="@color/pinkterang"
+            android:textSize="15sp"
+            android:layout_marginBottom="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textFontWeight="100"/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/tombolKembali"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="53dp"
+        android:text=""
+        android:background="@drawable/tombol_kembali"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:fontFamily="@font/wavehausbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tombolKembali"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="38dp"
+        android:backgroundTint="@color/ungu"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:padding="20dp"
+        android:textColor="@color/ungu"
+        android:textColorHint="@color/ungu"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:fontFamily="@font/wavehausbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ungu"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:padding="20dp"
+        android:maxLength="50"
+        android:hint="Username"
+        android:textColorHint="@color/ungu"
+        android:textColor="@color/ungu"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        android:layout_below="@id/name"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:fontFamily="@font/wavehausbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ungu"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:padding="20dp"
+        android:maxLength="50"
+        android:hint="Password"
+        android:textColorHint="@color/ungu"
+        android:textColor="@color/ungu"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:layout_below="@id/username"/>
+
+    <Button
+        android:id="@+id/tombolDaftar"
+        android:fontFamily="@font/wavehausbook"
+        android:background="@drawable/tombol_pink"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:text="Daftar"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        android:layout_below="@id/password" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/tombolDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/putih"
+        android:visibility="gone"/>
+
+</RelativeLayout>
