@@ -1,5 +1,4 @@
 # Aplikasi Mading Jurusan pada Kampus
-===
 
 Aplikasi ini dibangun untuk Tugas Akhir Pemograman Sistem Bergerak
 
