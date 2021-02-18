@@ -1,5 +1,7 @@
 Aplikasi Mading Jurusan pada Kampus
 
+============================================================================================================================================
+
 Aplikasi ini dibangun untuk Tugas Akhir Pemograman Sistem Bergerak
 
 oleh:
@@ -23,6 +25,6 @@ Berikut tampilan aplikasi ini.
 
 4. Halaman Tambah Pengumuman
 	<img src="https://raw.githubusercontent.com/gennierubyjane/app-mading/main/_screenshoot/4.%20Halaman%20Tambah%20Pengumuman.png" style="height: 300px">
-	
+
 5. Halaman Detail Pengumuman
 	<img src="https://raw.githubusercontent.com/gennierubyjane/app-mading/main/_screenshoot/5.%20Halaman%20Detail%20Pengumuman.png" style="height: 300px">
